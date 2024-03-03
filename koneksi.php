@@ -32,6 +32,10 @@ class database{
 	function create_artikel($judul,$tanggal_post,$artikel){
 		mysqli_query($this->koneksi,"insert into artikel values ('','$judul','$tanggal_post','$artikel')");
 	}
+	// afload_gambar
+	function afload_gambar($gambar1,$gambar2,$deskripsi){
+		mysqli_query($this->koneksi,"insert into gambar values ('','$gambar1','$gambar2','$deskripsi')");
+	}
 
     // proses hapus data servicw 
 	function hapus_artikel($id){
@@ -50,7 +54,7 @@ class database{
 		mysqli_query($this->koneksi,"update tb_service set nama_perangkat='$nama_perangkat', model='$model', tanggal_masuk='$tanggal_masuk',deskripsi='$deskripsi' where id_service='$id'");
 	}
 	// Data_teknisi
-	
+
 	// proses update data pelanggan end
 
 		// // tabel transaksi 

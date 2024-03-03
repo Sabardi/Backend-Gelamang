@@ -14,29 +14,6 @@ include "koneksi.php";
         <form action="proses.php?aksi=tambah" method="post">
             <table>
                 <tr>
-                    <td><label for="">Judul</label></td>
-                    <td>:</td>
-                    <td>
-                        <input type="text" name="Judul" id="Judul">
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="tanggal-post">Tanggal posting </label></td>
-                    <td>:</td>
-                    <td>
-                        <input type="date" name="tanggal-post" id="tanggal-post">
-                    </td>
-                </tr>
-
-                <tr>
-                    <td><label for="">Artikel</label></td>
-                    <td>:</td>
-                    <td>
-                        <textarea name="artikel" id="artikel" cols="30" rows="10"></textarea>
-                    </td>
-                </tr>
-<!-- afload gambar -->
-                <tr>
                     <td><label for="">Gambar1</label></td>
                     <td>:</td>
                     <td>
